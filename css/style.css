@@ -1,0 +1,187 @@
+.header-logo{
+    width: 40px;
+    height: auto;
+    margin-right:30px;
+}
+.header-logo g:nth-child(2){
+    transform: translateX(-110px);
+    transition: all ease-in-out 0.4s;
+}
+.header-logo:hover g:nth-child(2){
+    transform: translateX(0px);
+    transition: all ease-in-out 0.4s;
+}
+.header-logo{
+    width: 32px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.navbar {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.navbar-nav {
+    gap: 22px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 15px;
+    padding: 0;
+    color: #333;
+}
+
+.navbar-nav .nav-link.active {
+    color: #000;
+    font-weight: 500;
+}
+
+.navbar-collapse ul.ms-auto {
+    gap: 18px;
+}
+
+.navbar-collapse ul.ms-auto li svg {
+    width: 18px;
+    height: 18px;
+}
+
+.navbar-collapse ul.ms-auto li a {
+    color: #333;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .nav-bar {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+    .nav-bar ul {
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-bar ul.navbar-nav {
+        justify-content: center;
+        gap: 10px;
+    }
+    .nav-bar ul li a {
+        font-size: 13px;
+    }
+}
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+.navbar-collapse ul li span a {
+    position: relative;
+    display: inline-block;
+}
+.navbar-collapse ul li span a:hover {
+    color: #ff6900;
+}
+.navbar-collapse ul li span a::after{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #ff6900;
+    transition: all ease-in-out 0.4s;
+    transform: translateX(-50%);
+}
+.navbar-collapse ul li span a:hover::after{
+    width: 100%;
+}
+
+
+.carousel-item {
+    height: 500px;
+}
+#carouselExampleCaptions .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    #carouselExampleCaptions .carousel-item {
+        height: 300px;
+    }
+}
+@media (max-width: 480px) {
+    #carouselExampleCaptions .carousel-item {
+        height: 220px;
+    }
+    #carouselExampleCaptions .carousel-caption h5 {
+        font-size: 14px;
+    }
+    #carouselExampleCaptions .carousel-caption p {
+        font-size: 11px;
+    }
+}
+.second-row{
+    background-color: rgb(222, 221, 221);
+    text-align: center;
+    padding-top: 70px 0;
+}
+.category-panel {
+    display: none;
+}
+#panel-phones:target,
+#panel-tvs:target,
+#panel-tablets:target,
+#panel-lifestyle:target {
+    display: block;
+}
+#panel-phones {
+    display: block; /* default visible on page load */
+}
+
+.card{
+    border: none;
+    background: #ffffffd9;
+    border-radius: 10px;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card-title{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.from{
+    font-size: 16px;
+    color: #555;
+}
+
+.current-price{
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+}
+
+.old-price{
+    font-size: 16px;
+    color: #8a8a8a;
+    text-decoration: line-through;
+}
